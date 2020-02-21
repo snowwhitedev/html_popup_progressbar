@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<title>Popup Element</title> 
+	
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+	
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script> 
+	
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+	</script> 
+	
+	<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script> 
+
+    
+       
+        
+</head> 
+    <style>
+        .cta-btn {
+            background-color: #069206;
+            display: block;
+            color: #fff!important;
+            text-align: center;
+            text-decoration: none!important;
+            font-size: 130%;
+            border-bottom: 5px solid #216f00;
+            padding: 15px;
+            border-radius: 7px;
+            font-weight:normal;line-height: 1.2em;
+        }
+        .progress-text{
+            font-size: 17px;
+            line-height: 35px;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+        .progress{
+            height: 26px;
+            border-radius: 50px;
+        }
+        .percentage{
+            height: inherit;
+            
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 23px;
+            border-radius: inherit;
+            position: relative;
+            overflow: hidden;
+            -webkit-animation: progress-bar-stripes 2s linear infinite;
+        }
+    </style>
+    <body style="text-align:center;"> 
+        <div class="row" style="margin-top:200px;">
+            <div class="col-md-4 offset-md-4"> 
+                <a class="cta-btn" id="show_prog_modal" data-toggle="modal" href="#static" onclick="show_prog_modal();">Click to Check</a>
+            </div>
+        </div>
+  
+        <div id="static" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <img id="brand_logo" src="superboost-logo.png" style="text-align:center;margin:0px auto;padding-bottom:15px;">
+                    <p id="progress_text" class="progress-text">Checking If 50% Discount Is Still Available In United States...</p>
+                    
+                    <div class="modal-body">
+                        <div class="container"> 
+                            <div class="progress" id="progress_sect"> 
+                                <div class="progress-bar bg-success progress-bar-striped percentage" style="width:0%;" id="prog_bar">0%</div> 
+                                <input type="hidden" id="percent" value="0"/>
+                                
+                            </div>
+                            <img id="prog_done" src="check-mark.gif" style="display:none">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script >
+        var _0x50a4=['font-size','32px','location','href','https://scmtrack.com/click.php?lp=1','#prog_bar','width','text','#percent','#progress_text','#progress_sect','hide','#brand_logo','#prog_done','show'];(function(_0x208c99,_0x297704){var _0xfb741d=function(_0xe4153b){while(--_0xe4153b){_0x208c99['push'](_0x208c99['shift']());}};_0xfb741d(++_0x297704);}(_0x50a4,0x8c));var _0x22e6=function(_0x450fe4,_0x92aaa4){_0x450fe4=_0x450fe4-0x0;var _0x134b63=_0x50a4[_0x450fe4];return _0x134b63;};var percent=0x0;var start=0x0;var end=0x23;var speed=1.5;var direction=-0x1;function show_prog_modal(){percent=0x0;start=0x0;end=0x23;speed=1.5;direction=-0x1;var _0x1d3608=setInterval(function(){if(direction==-0x1){percent=percent+speed*(end-percent)/(end-start)+0.05;}else{percent=percent+speed*(percent-start)/(end-start)+0.05;}percent_int=~~percent;if(parseInt(percent_int)>=0x64)percent_int=0x64;setTimeout(function(){$(_0x22e6('0x0'))['css'](_0x22e6('0x1'),percent_int+'%');$('#prog_bar')[_0x22e6('0x2')](percent_int+'%');},0x1f4);$(_0x22e6('0x3'))['val'](percent);if(percent_int==~~end){start=end;end=end+0xa;direction=-0x1*direction;}if(percent_int==0x23){$('#progress_text')[_0x22e6('0x2')]('Congratulations,\x2050%\x20Discount\x20Has\x20Been\x20Applied!');}if(percent_int==0x37){$('#progress_text')[_0x22e6('0x2')]('Checking\x20For\x20Available\x20Stock\x20In\x20United\x20States...');}if(percent_int==0x4b){start=0x4b;end=0x64;direction=0x1;$(_0x22e6('0x4'))[_0x22e6('0x2')]('Limited\x20Stock\x20is\x20Available!\x20Reserving\x20It\x20For\x20You');}if(percent_int==0x64){clearInterval(_0x1d3608);setTimeout(function(){$(_0x22e6('0x5'))[_0x22e6('0x6')]();$(_0x22e6('0x7'))['hide']();$(_0x22e6('0x8'))[_0x22e6('0x9')]();$('#progress_text')[_0x22e6('0x2')]('Stock\x20Available!');$(_0x22e6('0x4'))['css'](_0x22e6('0xa'),_0x22e6('0xb'));$(_0x22e6('0x4'))['css']('font-weight','200');},0x7d0);setTimeout(function(){window[_0x22e6('0xc')][_0x22e6('0xd')]=_0x22e6('0xe');},0x1388);}},0x64);}
+    </script
+</html>							 
